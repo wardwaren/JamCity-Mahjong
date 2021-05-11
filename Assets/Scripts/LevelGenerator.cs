@@ -45,6 +45,7 @@ public class LevelGenerator : MonoBehaviour
                 {
                     GameObject newTileFile = GameObject.Instantiate(_tilePrefab);
                     newTileFile.transform.position = curPosition;
+                    //TODO change tile positioning to grid instead of manual placement.
                     float newPosX = curPosition.x + _tilePrefab.GetComponent<SpriteRenderer>().bounds.size.x;
                     curPosition = new Vector3(newPosX,curPosition.y,curPosition.z);
                 

@@ -10,6 +10,12 @@ public class GameManager : MonoBehaviour
     private Tile curTile;
     private List<List<GameObject>> currentGrid;
 
+    /*
+        TODO
+        Implement a pathfinding algorithm that will traverse through the grid and try to look for 
+        possible path with less than 3 turns between tile a and tile b. Djikstra can be taken as the basis
+        however it will need to be modified in order to account for out of the grid connections. 
+    */
     private bool findPath(Tile a, Tile b)
     {
         return false;
